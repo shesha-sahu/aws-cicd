@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  aws-code-deploy: circleci/aws-code-deploy@3.0.0
 jobs:
   build:
     docker:
@@ -14,9 +16,21 @@ jobs:
             sudo pip3 install awsebcli --upgrade
             sudo pip3 install --upgrade pip
       - run: pip3 install -r requirements.txt && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver
+  deploy:
+    application-name: aws-cicd-app
+    auth:
+      - aws-cli/setup
+    bundle-bucket: myA
+    bundle-key: m
+    deployment-group: aws-cicd-dep-group
+    service-role-arn: my
 
 
 workflows:
   current-workflow:
     jobs:
     - build
+    - deploy
+
+
+
