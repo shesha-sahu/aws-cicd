@@ -10,6 +10,6 @@ workflows:
           auth:
             - aws-cli/setup
           bundle-bucket: insightai-cicd
-          bundle-key: arn:aws:s3:::insightai-cicd/appdirectory/
+          bundle-key: tagname
           deployment-group: aws-cicd-dep-group
           service-role-arn: arn:aws:iam::282765282943:role/CodeDeployRole
