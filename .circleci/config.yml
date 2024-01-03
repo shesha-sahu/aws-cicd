@@ -13,8 +13,9 @@ jobs:
         
         - run: |
             echo "$DOCKERHUB_PASSWORD" | docker login --username $DOCKERHUB_USERNAME --password-stdin
-        - run: docker build -t user_name/aws-cicd:$main .
-        - run: docker push user_name/hubrepo:$main
+        - run: docker build -t user_name/circle_ci_python_example:$CIRCLE_BRANCH .
+        - run: docker push user_name/circle_ci_python_example:$CIRCLE_BRANCH
+
 
 
 workflows:
