@@ -17,7 +17,6 @@ jobs:
         - run: docker push user_name/circle_ci_python_example:$CIRCLE_BRANCH
 
 
-
 workflows:
   my-workflow:
     jobs:
