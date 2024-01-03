@@ -1,36 +1,22 @@
 version: 2.1
-orbs:
-  aws-code-deploy: circleci/aws-code-deploy@3.0.0
+
 jobs:
-  build:
+  test-and-lint:
     docker:
-      - image: cimg/python:3.8.18
-    resource_class: medium
+      - image: cimg/python:3.10.1
     steps:
       - checkout
       - run:
-          name: Installing AWS CLI and dependency
-          command: |
-            sudo apt-get update
-            sudo apt install python3-pip
-            sudo pip3 install awsebcli --upgrade
-            sudo pip3 install --upgrade pip
-      - run: pip3 install -r requirements.txt && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver
-  deploy:
-    application-name: aws-cicd-app
-    auth:
-      - aws-cli/setup
-    bundle-bucket: myA
-    bundle-key: m
-    deployment-group: aws-cicd-dep-group
-    service-role-arn: my
-
+          name: install dependencies
+          command: pip install -r requirements.txt
+      # - run:
+      #     name: lint
+      #     command: pylint my_media/ media_organizer/
+      # - run:
+      #     name: run tests
+      #     command: python manage.py test
 
 workflows:
-  current-workflow:
+  build-and-test-workflow:
     jobs:
-    - build
-    - deploy
-
-
-
+      - test-and-lint
