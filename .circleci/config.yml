@@ -13,8 +13,8 @@ jobs:
         
         - run: |
             echo "$DOCKERHUB_PASSWORD" | docker login --username $DOCKERHUB_USERNAME --password-stdin
-        - run: docker build -t user_name/circle_ci_python_example:$CIRCLE_BRANCH .
-        - run: docker push user_name/circle_ci_python_example:$CIRCLE_BRANCH
+        - run: docker build -t user_name/circlehubrepo:$CIRCLE_BRANCH .
+        - run: docker push user_name/circlehubrepo:$CIRCLE_BRANCH
 
 
 workflows:
