@@ -1,26 +1,15 @@
 version: 2.1
-
-jobs:
-
-  build-and-push-to-dockerhub:
-      docker:
-        - image: cimg/python:3.8.18
-      steps:
-        - checkout
-        - setup_remote_docker:
-            version: 19.03.13
-            docker_layer_caching: true
-        
-        - run: |
-            echo "$DOCKERHUB_PASSWORD" | docker login --username $DOCKERHUB_USERNAME --password-stdin
-        - run: docker build -t user_name/circlehubrepo:$CIRCLE_BRANCH .
-        - run: docker push user_name/circlehubrepo:$CIRCLE_BRANCH
-
-
+orbs:
+  aws-cli: circleci/aws-cli@3.1
+  aws-code-deploy: circleci/aws-code-deploy@3.0
 workflows:
-  my-workflow:
+  deploy_application:
     jobs:
-     - build-and-push-to-dockerhub
-
-
-
+      - aws-code-deploy/deploy:
+          application-name: aws-cicd-app
+          auth:
+            - aws-cli/setup
+          bundle-bucket: insightai-cicd
+          bundle-key: s3://insightai-cicd/appdirectory/
+          deployment-group: aws-cicd-dep-group
+          service-role-arn: arn:aws:iam::282765282943:role/CodeDeployRole
