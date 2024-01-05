@@ -3,8 +3,16 @@
 # clean codedeploy-agent files for a fresh install
 sudo rm -rf /home/ubuntu/install
 
-# file to be edited for verification purpose
+# edited for varification the changes are reflected
 
+# # install CodeDeploy agent
+# sudo apt-get -y update
+# sudo apt-get -y install ruby
+# sudo apt-get -y install wget
+# cd /home/ubuntu
+# wget https://aws-codedeploy-us-west-2.s3.amazonaws.com/latest/install
+# sudo chmod +x ./install 
+# sudo ./install auto
 
 #!/bin/bash 
 # This installs the CodeDeploy agent and its prerequisites on Ubuntu 22.04.  
