@@ -3,7 +3,7 @@
 # clean codedeploy-agent files for a fresh install
 sudo rm -rf /home/ubuntu/install
 
-# file edited 
+# file to be edited for verification purpose
 
 
 #!/bin/bash 
