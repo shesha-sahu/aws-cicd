@@ -7,7 +7,7 @@ class MyFunctionTestCase(TestCase):
 
     def test_addition(self):
         result = add(3, 5)
-        self.assertEqual(result,8, "Verify addition result")
+        self.assertEqual(result,9, "Verify addition result")
 
     # def test_substract(self):       
     #     result = sub(10,7)
