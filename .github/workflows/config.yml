@@ -28,12 +28,14 @@ jobs:
           python manage.py migrate
           python manage.py test
 
-# Define CD_Pipeline workflow triggered after CI_Pipeline completes
+# Define CD_Pipeline to run only when CI_Pipeline is completed successfully
 CD_Pipeline:
-  needs: CI_Pipeline
-  types: [workflow_run]
   runs-on: ubuntu-latest
+  needs: build
+  if: github.event_name == 'workflow_run' && github.event.workflow == 'CI_Pipeline' && github.event.workflow_run.conclusion == 'success'
   steps:
-    - name: Trigger CD pipeline
-      run: echo "Triggering CD pipeline after CI completion"
-      # Add steps here to perform actions after successful CI completion
+    - name: Deployment Step
+      run: |
+        echo "Deployment triggered after successful CI Pipeline completion"
+        # Add deployment steps here
+        
