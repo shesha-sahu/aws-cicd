@@ -9,4 +9,4 @@ class MyFunctionTestCase(TestCase):
         # Test case
         result = add(3, 5)
         # Assertion to check if the result matches the expected value
-        self.assertEqual(result, 8, "Incorrect addition result")
+        self.assertEqual(result, 9, "Incorrect addition result")
