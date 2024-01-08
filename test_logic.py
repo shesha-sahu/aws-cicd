@@ -1,6 +1,6 @@
 from django.test import TestCase
 from djangoapp.views import add
-from djangoapp.views import subtract
+# from djangoapp.views import subtract
 
 # Create a test case class that inherits from Django's TestCase class
 class MyFunctionTestCase(TestCase):
