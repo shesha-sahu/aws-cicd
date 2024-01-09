@@ -1,17 +1,18 @@
 ## Pull Request Checklist
+make sure to add the change log for the changes in this PR
 
 ### Description of Changes:
-<Updated the readme file.>
+<Updated-the-readme-file>
 
 ### Features Affected:
-<No direct impact on existing features.>
+<Mention-impact-on-existing-features>
 
 ### Potential Conflicts:
-<Documentation may require updates due to >
+<Mention-probability-of-conflict>
 
 ### New Libraries Introduced:
-< Pillow (Utilized for Image loading).>
+<mention-uses-new-dependenceis>
 
 ### Reviewee Assignments:
-<@girish>
+<@xyz>
 
