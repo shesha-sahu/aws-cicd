@@ -1,4 +1,4 @@
-** Review Preparation Summary **
+**Review Preparation Summary**
 
 **Description:** <write>
 
