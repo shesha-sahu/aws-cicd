@@ -1,12 +1,17 @@
-**Review Preparation Summary**
+## Pull Request Checklist
 
-**Description:** <write>
+### Description of Changes:
+<Updated the readme file.>
 
-**Features affected:** <direct impact on existing features>
+### Features Affected:
+<No direct impact on existing features.>
 
-**Possible conflicts:** <Documentation might need updates due to changes.>
-**Possible conflicts:** <Documentation might need updates due to changes.>
+### Potential Conflicts:
+<Documentation may require updates due to >
 
-**New libraries included:** <mention libraries>
+### New Libraries Introduced:
+< Pillow (Utilized for Image loading).>
 
-**Reviewee:** <@girish,@akash>
+### Reviewee Assignments:
+<@girish>
+
