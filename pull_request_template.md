@@ -14,5 +14,5 @@ make sure to add the change log for the changes in this PR
 <mention-uses-new-dependenceis>
 
 ### Reviewee Assignments:
-<@xyz>
+<tag-@-xyz>
 
