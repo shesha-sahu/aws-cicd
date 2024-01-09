@@ -1,14 +1,12 @@
 ** Review Preparation Summary **
 
-** Description : ** <write>
+**Description:** <write>
 
-** Features affected: **
-- No direct impact on existing features.
+**Features affected:** <direct impact on existing features>
 
-** Possible conflicts: **
-- Documentation might need updates due to changes.
+**Possible conflicts:** <Documentation might need updates due to changes.>
+**Possible conflicts:** <Documentation might need updates due to changes.>
 
-** New libraries included: **
-- PyAutoGui, pandas
+**New libraries included:** <mention libraries>
 
-** Reviewee: ** < - @girish, @akash >
+**Reviewee:** <@girish,@akash>
