@@ -1,4 +1,4 @@
-### 📝 Pull Request Checklist 🚀:
+## 📝 Pull Request Checklist:
 Make sure to add the change log for the changes in this PR
 
 ### ✏️ Description of Changes:
@@ -7,12 +7,12 @@ Make sure to add the change log for the changes in this PR
 ### 🚀 Features Affected:
 <Mention-impact-on-existing-features>
 
-### 🚧: Potential Conflicts:
+### 🚧 Potential Conflicts:
 <Mention-probability-of-conflict>
 
-### New Libraries Introduced:
+### 📚 New Libraries Introduced:
 <mention-uses-new-dependenceis>
 
-### Reviewee Assignments:
+### 👀 Reviewee Assignments:
 <tag-@-xyz>
 
