@@ -2,12 +2,9 @@ name: ci-pipeline
 
 on:
   push:
-    branches:
-      - "*"
+    branches: ["*"]
   pull_request:
-    branches:
-      - "develop"
-      - "main"
+    branches: ['*']
 jobs:
   build-and-test:
     runs-on: self-hosted
