@@ -2,14 +2,14 @@
 Make sure to add the change log for the changes in this PR
 
 ### ✏️ Description of Changes:
-<Updated-the-readme-file>
+<Summarize changes in this pull request>
 
-### 🚀 Features Affected
-< List changes and potential conflicts in this pull request >
+### 🚀 Features Affected:
+<List changes and potential conflicts in this pull request>
   
 ### 📚 New Libraries Introduced:
-<mention-uses-new-dependenceis>
+<List any new libraries or dependencies>
 
 ### 👀 Reviewee Assignments:
-<tag-@-xyz>
+<tag with @ to xyz>
 
