@@ -11,5 +11,5 @@ Make sure to add the change log for the changes in this PR
 <List any new libraries or dependencies>
 
 ### 👀 Reviewee Assignments:
-<tag with @ to xyz>
+<tag with @ to your reviewer>
 
